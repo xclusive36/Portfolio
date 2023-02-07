@@ -1,0 +1,92 @@
+/* Cited from: https://codepen.io/tedib/pen/mdypQbg */
+
+:root {
+    --nav-color: #ffffff;
+    --nav-background-color: #31343d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex; /* flexbox */
+    justify-content: space-between; /* align items horizontally */
+    align-items: center; /* align items vertically */
+    background-color: var(--nav-background-color);
+    padding-bottom: 0.5em;
+    padding-top: 0.1em;
+}
+
+nav {
+    display: flex; /* flexbox */
+    margin-right: 1em;
+}
+
+nav span {
+    display: block;
+    padding: 0.3em;
+}
+
+nav a {
+    color: var(--nav-color);
+    text-decoration: none;
+    padding: 0 0.5em 0.2em 0.5em;
+    border-bottom: var(--nav-color) 3px solid;
+}
+
+.logo {
+    display: block;
+    padding-left: 3em;
+    color: var(--nav-color);
+}
+
+.avatar {
+    display: block;
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* ****** ****** */
+@media all and (max-width: 600px) {
+    .logo {
+        margin: 0.25em 0;
+        align-self: left; /* align the logo to the left side of 'flex-container' */
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        align-self: center;
+    }
+
+    nav li:last-of-type a {
+        border-bottom: none;
+    }
+}
