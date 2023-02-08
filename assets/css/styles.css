@@ -65,7 +65,7 @@ section {
 
 .description {
     display: flex;
-    background-color: #fff;
+    background-color: var(--nav-color);
     justify-content: space-evenly;
     align-items: center;
 }
@@ -73,7 +73,7 @@ section {
 #about-content {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: var(--nav-color);
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -99,10 +99,36 @@ section {
     /* min-width: 300px;
     min-height: 300px; */
     padding: 2em;
-    background-color: #fff;
+    background-color: var(--nav-color);
     margin: 1em;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: var(--nav-color);
+}
+
+#contact p {
+    margin: 1em 2em;
+}
+
+#contact form {
+    text-decoration: none;
+    align-self: center;
+}
+
+button {
+    background-color: var(--nav-background-color);
+    color: var(--nav-color);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    margin: 1em 0;
+    cursor: pointer;
 }
 
 /* ****** ****** */
