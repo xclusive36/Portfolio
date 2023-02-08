@@ -3,6 +3,8 @@
 :root {
     --nav-color: #ffffff;
     --nav-background-color: #31343d;
+    --avatar-background-color: #b9c6ae;
+    --work-background-color: #f3f3f3;
 }
 
 * {
@@ -54,35 +56,53 @@ section {
     display: flex;
 }
 
-#about {
-    display: flex;
-}
-
 .avatar-block {
     display: flex;
     justify-content: center;
-    background-color: #b9c6ae;
+    background-color: var(--avatar-background-color);
     padding: 80px;
 }
 
 .description {
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
     display: flex;
-    flex-wrap: wrap;
+    background-color: #fff;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
 }
 
-#about {
-    flex: 1;
+#about-content {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
-    padding: 50px;
+    padding: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+#work {
+    display: block;
+    flex-direction: column;
+    padding: 2em;
+    background-color: var(--work-background-color);
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    /* min-width: 300px;
+    min-height: 300px; */
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ****** ****** */
@@ -128,7 +148,7 @@ section {
         padding: 1em 1em;
     }
 
-    main {
+    /* main {
         flex-direction: column;
-    }
+    } */
 }
