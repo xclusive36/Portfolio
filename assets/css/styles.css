@@ -1,50 +1,50 @@
 /* Cited from: https://codepen.io/tedib/pen/mdypQbg */
 
 :root {
-    --nav-color: #ffffff;
-    --nav-background-color: #31343d;
-    --avatar-background-color: #b9c6ae;
-    --work-background-color: #f3f3f3;
+  --nav-color: #ffffff;
+  --nav-background-color: #31343d;
+  --avatar-background-color: #b9c6ae;
+  --work-background-color: #f3f3f3;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--nav-background-color);
-    padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 1em;
 }
 
 .logo {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .logo a {
-    color: var(--nav-color);
-    text-decoration: none;
+  color: var(--nav-color);
+  text-decoration: none;
 }
 
 nav span {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 nav a {
-    color: var(--nav-color);
-    text-decoration: none;
+  color: var(--nav-color);
+  text-decoration: none;
 }
 
 .avatar {
-    display: block;
-    width: 15em;
-    height: 15em;
-    border-radius: 50%;
-    margin-right: 1em;
+  display: block;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  margin-right: 1em;
 }
 
 /* main {
@@ -53,147 +53,146 @@ nav a {
 } */
 
 section {
-    display: flex;
+  display: flex;
 }
 
 .avatar-block {
-    display: flex;
-    justify-content: center;
-    background-color: var(--avatar-background-color);
-    padding: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--avatar-background-color);
+  padding: 80px;
 }
 
 .description {
-    display: flex;
-    background-color: var(--nav-color);
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  background-color: var(--nav-color);
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #about-content {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--nav-color);
-    padding: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--nav-color);
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #work {
-    display: block;
-    flex-direction: column;
-    padding: 2em;
-    background-color: var(--work-background-color);
+  display: block;
+  flex-direction: column;
+  padding: 2em;
+  background-color: var(--work-background-color);
 }
 
 #cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .card {
-    /* min-width: 300px;
+  /* min-width: 300px;
     min-height: 300px; */
-    padding: 2em;
-    background-color: var(--nav-color);
-    margin: 1em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 2em;
+  background-color: var(--nav-color);
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    background-color: var(--nav-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: var(--nav-color);
 }
 
 #contact p {
-    margin: 1em 2em;
+  margin: 1em 2em;
 }
 
 #contact form {
-    text-decoration: none;
-    align-self: center;
+  text-decoration: none;
+  align-self: center;
 }
 
 button {
-    background-color: var(--nav-background-color);
-    color: var(--nav-color);
-    padding: 1em 2em;
-    border: none;
-    border-radius: 5px;
-    margin: 1em 0;
-    cursor: pointer;
+  background-color: var(--nav-background-color);
+  color: var(--nav-color);
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  margin: 1em 0;
+  cursor: pointer;
 }
 
 .card-images {
-    height: 100px;
+  height: 100px;
 }
 
-.card-images:hover {
-    height: 120px;
-    transition: 0.5s;
+.large-image {
+  height: 200px;
 }
 
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: var(--nav-background-color);
-    color: var(--nav-color);
+  text-align: center;
+  padding: 1em;
+  background-color: var(--nav-background-color);
+  color: var(--nav-color);
 }
 
 /* ****** ****** */
 @media all and (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
+  header {
+    flex-direction: column;
+  }
 
-    nav {
-        margin-top: 1em;
-    }
+  nav {
+    margin-top: 1em;
+  }
 
-    main {
-        display: flex;
-        flex-direction: column;
-    }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 
-    section {
-        display: flex;
-        flex-direction: column;
-    }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .logo {
-        margin: 0.25em 0;
-        align-self: left;
-    }
+  .logo {
+    margin: 0.25em 0;
+    align-self: left;
+  }
 }
 
 /* ****** ****** */
 @media all and (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
+  header {
+    flex-direction: column;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1em;
-        text-align: center;
-    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    text-align: center;
+  }
 
-    nav span {
-        padding: 1em 1em;
-    }
+  nav span {
+    padding: 1em 1em;
+  }
 
-    /* main {
+  /* main {
         flex-direction: column;
     } */
 }
