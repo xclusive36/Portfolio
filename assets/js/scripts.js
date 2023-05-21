@@ -5,6 +5,12 @@ const cardsEl = document.getElementById("cards");
 
 const projects = [
   {
+    title: "Meta-Insight",
+    alt: "Meta-Insight",
+    image: "./assets/images/meta-insight.png",
+    link: "https://github.com/erin-m-keller/meta-insight/",
+  },
+  {
     title: "Volunteer Finder",
     alt: "Volunteer Finder",
     image: "./assets/images/vf.png",
